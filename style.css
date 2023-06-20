@@ -1,3 +1,65 @@
-h1 {
-    color: tomato;
+
+:root {
+    --bg-body: #234E8F;
+    --buttons: #66ECBC;
+    --btn-text: #234E8F;
+    --text: #2F2F2F;
+    --bubble-head-1: #F5941D;
+    --bubble-head-2: #416BE4;
+    --bubble-head-3: #34C935;
+    --box-container: #668CF2;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav {
+    padding-right: 5%;
+    
+}
+
+.navbar-brand {
+    padding-left: 5%;
+    font-weight: 500;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .navbar-brand {
+        padding-left: 10%;
+    }
+
+    .navbar-nav {
+        padding-right: 10%;
+    }
+}
+
+/* desktop */
+@media (min-width:900px) {
+    .navbar-brand {
+        padding-left: 15%;
+    }
+    .navbar-nav {
+        padding-right: 15%;
+    }
+}
+
+.bg {
+    background-color: var(--bg-body);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+
+
+
+

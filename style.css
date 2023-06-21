@@ -7,6 +7,7 @@
     --bubble-head-2: #416BE4;
     --bubble-head-3: #34C935;
     --box-container: #668CF2;
+    --box-container2: #ecf4fd;
 }
 
 * {
@@ -66,7 +67,7 @@ h2 {
 
 .welcome_container {
     z-index: 0;
-    position: absolute;
+    position: relative;
 }
 
 .welcome-content {
@@ -85,6 +86,7 @@ h2 {
     background: var(--bg-body);
     margin: 0;
     color: white;
+    padding-bottom: 20px
 }
 
 
@@ -105,10 +107,37 @@ h2 {
     height: 200px;
 }
 
-/* stats card */
-.stats_card {
-    height: auto;
-    font-weight: 200;
+/* achievement card */
+.achievements {
+    display: flexbox;
+}
+
+.achievement_wrapper {
+    position: relative;
+    margin: -2.5% 2.5% 2.5% 2.5%;
+}
+
+.stats_col {
+    background: var(--box-container2);
+}
+
+
+.logo_colored {
+    margin-right: -2%;
+    margin-top: -5%;
+    width: auto;
+    height: 150px;
+    z-index: 0;
+}
+
+.stats_header {
+    position: relative;
+    z-index: 1;
+}
+
+/* marketing */
+.marketing {
+    clear: both;
 }
 
 /* Tablet mode */
@@ -129,6 +158,11 @@ h2 {
     .watermark {
         height: calc(70% - 70px);
     }
+
+    .logo_colored {
+        width: auto;
+        height: 200px;
+    }
 }
 
 /* desktop mode */
@@ -147,7 +181,17 @@ h2 {
     }
 
     .watermark {
-        height: calc(35% - 90px);
+        position: absolute;
+        right: 60%;
+        top: 10px;
+        z-index: 0;
+        width: auto;
+        height: 500px;
+    }
+
+    .logo_colored {
+        width: auto;
+        height: 300px;
     }
 }
 

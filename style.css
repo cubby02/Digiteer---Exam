@@ -145,8 +145,13 @@ h2 {
 
 
 /* marketing */
-.marketing {
+.marketing_container {
     clear: both;
+    margin-top: 10%;
+}
+
+.marketing_content {
+    margin: 3%;
 }
 
 /* Tablet mode */

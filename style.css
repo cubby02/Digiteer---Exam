@@ -142,6 +142,8 @@ h2 {
     z-index: 1;
 }
 
+
+
 /* marketing */
 .marketing {
     clear: both;
@@ -199,6 +201,10 @@ h2 {
     .logo_colored {
         width: auto;
         height: 250px;
+    }
+
+    .stats_img {
+        margin-top: 25%;
     }
 }
 

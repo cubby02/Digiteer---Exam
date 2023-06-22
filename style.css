@@ -92,30 +92,6 @@ body {
     z-index: 1;
 }
 
-.bubbles {
-    position: absolute;
-    overflow: hidden;
-}
-
-.banner_bubble_1 {
-    position: relative;
-    left: 50px;
-    top: 345px;
-}
-
-.banner_bubble_2 {
-    position: relative;
-    left: 170px;
-    top: 165px;
-}
-
-.banner_bubble_3 {
-    position: relative;
-    left: 70px;
-    top: 375px;
-}
-
-
 .watermark {
     position: absolute;
     right: 60%;

@@ -11,7 +11,7 @@
 }
 
 * {
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,7 +20,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* nav bar */
+/* Navigation Bar */
 .navbar-brand {
     padding-left: 5%;
     font-weight: 700;
@@ -46,12 +46,7 @@ body {
     box-shadow: none;
 }
 
-/* welcome message */
-
-h2 {
-    font-weight: 700;
-}
-
+/* Banner */
 .welcome_txt {
     font-weight: 200;
     margin-top: 25px;
@@ -107,7 +102,7 @@ h2 {
     height: 200px;
 }
 
-/* achievement card */
+/* Achievements and Stats */
 .achievements {
     display: flexbox;
 }
@@ -143,8 +138,7 @@ h2 {
 }
 
 
-
-/* marketing */
+/* Marketing */
 .marketing_container {
     clear: both;
     margin-top: 10%;
@@ -152,6 +146,76 @@ h2 {
 
 .marketing_content {
     margin: 3%;
+}
+
+/* Field work */
+.field_container {
+    background: linear-gradient(#F0F7FF, #FFFFFF);
+    padding: 5%;
+}
+
+.field_work {
+    margin-top: 4%;
+    max-width: 100%;
+}
+
+.field_title {
+    color: var(--bg-body);
+    margin-top: 4%;
+}
+
+.field_content {
+    margin-top: 3%;
+}
+
+.field_btn {
+    width: 100%;
+    color: var(--bg-body);
+    background-color: var(--buttons);
+    border: none;
+    margin-top: 3%;
+}
+
+/* Schedule a free consult */
+.consult_container {
+    background-color: var(--box-container);
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.consult_btn_wrapper {
+    width: 100%; 
+}
+
+.consult_btn {
+    color: var(--bg-body);
+    background-color: var(--buttons);
+    border: none;
+    width: 80%;
+}
+
+/* Articles */
+.article_parent_wrapper {
+    margin-top: 8%;
+    margin-bottom: 10%;
+    
+}
+
+.article_child_wrapper {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.article_title {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.article_btn {
+    color: var(--bg-body);
+    background-color: var(--buttons);
+    border: none;
+    width: 40%;
 }
 
 /* Tablet mode */
@@ -176,6 +240,29 @@ h2 {
     .logo_colored {
         width: auto;
         height: 200px;
+    }
+
+    .field_title {
+        margin-top: 0%;
+    }
+
+    .consult_img_wrapper {
+        position: relative;
+    }
+
+    .consult_img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .consult_btn_wrapper {
+        position: absolute;
+        width: 80%;
+        top: 10%;
+        left: 10%;
+        z-index: 1;
     }
 }
 
@@ -210,6 +297,32 @@ h2 {
 
     .stats_img {
         margin-top: 25%;
+    }
+
+    .field_title {
+        margin-top: 0%;
+    }
+
+    .consult_img_wrapper {
+        position: relative;
+    }
+
+    .consult_img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .consult_img {
+        z-index: 0;
+    }
+    
+    .consult_btn_wrapper {
+        position: absolute;
+        width: 80%;
+        top: 40%;
+        left: 10%;
+        z-index: 1;
     }
 }
 

@@ -9,9 +9,11 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
+
     <body>
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-md nav_bg">
@@ -46,22 +48,25 @@
         <!-- Banner -->
         <div class="container-fluid welcome_container">
             <div class="row welcome_container_row">
-              <div class="col-md-6 col-md-6 col1 col-intro">
-                <!-- Banner message-->
-                <div class="welcome-content">
-                    <h2>Harness the power of employee benefits for your company</h2>
-                    <p class="welcome_txt">
-                        Bnfts is your expert partner in developing employee benefits strategies that effectively maximize employee engagement and satisfaction.
-                    </p>
-                    <button type="button" class ="btn btn-primary btn-discover">Discover Now</button>
+                <div class="col-md-6 col-md-6 col1 col-intro">
+                    <!-- Banner message-->
+                    <div class="welcome-content">
+                        <h2 class="fw-bold">Harness the power of employee benefits for your company</h2>
+                        <p class="welcome_txt">
+                            Bnfts is your expert partner in developing employee benefits strategies that effectively maximize employee engagement and satisfaction.
+                        </p>
+                        <button type="button" class ="btn btn-primary btn-discover">Discover Now</button>
+                    </div>
+                    <img src="assets/images/watermark.png" alt="" class="watermark">
+                  </div>
+                  
+                  <!-- Banner photo-->
+                  <div class="col-md-6 col-md-6 col2 g-0">
+                    <div class="faded_blue"></div>
+                    <img src="assets/images/teamwork 2.jpg" class="img-fluid team" alt="Teamwork ">
                 </div>
-                <img src="assets/images/watermark.png" alt="" class="watermark">
-              </div>
-              <!-- Banner photo-->
-              <div class="col-md-6 col-md-6 col2 g-0">
-                <div class="faded_blue"></div>
-                <img src="assets/images/teamwork 2.jpg" class="img-fluid team" alt="Teamwork ">
             </div>
+                
         </div>
 
         <!-- Achievements and Stats -->
@@ -171,18 +176,18 @@
                     <div class="p-3">
                         <h3 class="fw-bold">Your business goals drive us forward</h3>
                         <p class="fw-light">
-                            At Bnfts, we don"t stop when our tasks are competed or when the day is over. We continue to move forward until all your business goals are met.
+                            <br>At Bnfts, we don"t stop when our tasks are competed or when the day is over. We continue to move forward until all your business goals are met.
                         </p>
                     </div>
                 </div>
             </div>
             <!-- Commitment -->
             <div class="row marketing_content">
-                <div class="col-md-6 col-12">
+                <div class="col-md-6 col-12 m-auto">
                     <div class="p-3">
                         <h3 class="fw-bold">100% Client Commitment</h3>
                         <p class="fw-light">
-                            The times may be modern but we stay true to our decades old client-first brand of servicing. We are committed to our client 100% no matter the situation. Using our expert network, we believe we can face any challenge and succeed.
+                            <br>The times may be modern but we stay true to our decades old client-first brand of servicing. We are committed to our client 100% no matter the situation. Using our expert network, we believe we can face any challenge and succeed.
                         </p>
                     </div>
                 </div>
@@ -193,177 +198,203 @@
         </div>
         
         <!-- Field work -->
-        <div class="container-fluid">
-            <h2>Our field of work</h2>
-            <div class="container-fluid">
-                <div class="row">
+        <div class="container-fluid field_container h-100">
+            <div class="title_h2">
+                <h2 class="fw-bold text-center">Our field of work</h2>
+            </div>
+            <div class="container-fluid field_work">
+                <div class="row gx-5 p-2">
                     <!-- Employee Benefits -->
-                    <div class="col shadow-lg p-5 mb-5 bg-white rounded">
-                        <div class="row container-fluid">
-                            <div class="col">
-                                <img src="assets/images/employee benefits.png" alt="Benefits" class="img-fluid">
+                    <div class="col flex-grow-1">
+                        <div class="shadow-lg p-4 mb-5 bg-white rounded-4 field_work_card">
+                            <div class="row g-md-5 g-lg-4">
+                                <div class="col-md-4 col-md-4 text-center">
+                                    <img src="assets/images/employee benefits.png" alt="Benefits" width="80px" height="80px">
+                                </div>
+                                <div class="col-md-8 col-md-8">
+                                    <p class="fw-bold fs-4 field_title text-center text-md-start">Employee Benefits</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <h3>Employee Benefits</h3>
-                            </div>
+                            <p class="fw-light field_content">
+                                Develop a strong Employee Benefits Plan that works for your business and business goals.
+                            </p>
+                            <button type="button" class ="btn btn-primary field_btn">Work on Benefits</button>
                         </div>
-                        <p>
-                            Develop a strong Employee Benefits Plan that works for your business and business goals.
-                        </p>
-                        <button type="button" class ="btn btn-primary btn-discover">Work on Benefits</button>
                     </div>
 
                     <!-- Risk Analysis -->
-                    <div class="col shadow-lg p-5 mb-5 bg-white rounded">
-                        <div class="row container-fluid">
-                            <div class="col">
-                                <img src="assets/images/risk analysis.png" alt="Risk Analysis" class="img-fluid">
+                    <div class="col flex-grow-1">
+                        <div class="shadow-lg p-4 mb-5 bg-white rounded-4 field_work_card">
+                            <div class="row g-lg-0 g-md-5">
+                                <div class="col-md-4 col-md-4 text-center">
+                                    <img src="assets/images/risk analysis.png" alt="Risk Analysis" width="80px" height="80px">
+                                </div>
+                                <div class="col-md-8 col-md-8">
+                                    <p class="fw-bold fs-4 field_title text-center text-md-start">Risk Analysis & Management</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <h3>Risk Analysis & Management</h3>
-                            </div>
+                            <p class="fw-light field_content">
+                                Assess your areas of risk and defend your business from unforeseen circumstances that derail growth.
+                            </p>
+                            <button type="button" class ="btn btn-primary field_btn">Work on Risk</button>
                         </div>
-                        <p>
-                            Assess your areas of risk and defend your business from unforeseen circumstances that derail growth.
-                        </p>
-                        <button type="button" class ="btn btn-primary btn-discover">Work on Risk</button>
                     </div>
 
                     <!-- HR Outsourcing -->
-                    <div class="col shadow-lg p-5 mb-5 bg-white rounded">
-                        <div class="row container-fluid">
-                            <div class="col">
-                                <img src="assets/images/hr.png" alt="Human Resource" class="img-fluid">
+                    <div class="col flex-grow-1">
+                        <div class="shadow-lg p-4 mb-5 bg-white rounded-4 field_work_card">
+                            <div class="row g-lg-0 g-md-5">
+                                <div class="col-lg-4 col-md-4 text-center">
+                                    <img src="assets/images/hr.png" alt="Human Resource" width="80px" height="80px">
+                                </div>
+                                <div class="col-lg-8 col-md-8">
+                                    <p class="fw-bold fs-4 field_title text-center text-md-start">HR Outsourcing & Consultancy</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <h3>HR Outsourcing & Consultancy</h3>
-                            </div>
+                            <p class="fw-light field_content">
+                                Protect what matters in the business. From people to property, there is an insurance that can safeguard you.
+                            </p>
+                            <button type="button" class ="btn btn-primary field_btn">Work on Insurance</button>
                         </div>
-                        <p>
-                            Protect what matters in the business. From people to property, there is an insurance that can safeguard you.
-                        </p>
-                        <button type="button" class ="btn btn-primary btn-discover">Work on Insurance</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Schedule a free consult -->
-            <div class="shadow-none p-3 mb-5 bg-light rounded">
-                <div class="row container-fluid">
-                    <div class="col">
-                        <h2>Ready to take advantage of Bnfts?</h2>
-                        <p>
-                            Schedule a free benefits consultation or risk audit with us and learn how you can improve your benefits strategy to increase employee engagement and benefits satisfaction.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <img src="assets/images/free audit.png" alt="Audit" class="img-fluid">
-                        <button type="button" class ="btn btn-primary btn-discover">Schedule a Free Audit</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Articles -->
-            <h2>Get the latest news & insights</h2>
-            
-            <div class="row container-fluid">
-                <!-- Article 1 -->
-                <div class="col">
-                    <img src="assets/images/first article.png" alt="Article 1" class="img-fluid">
-                    <h5><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
-                    <p>
-                        This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
-                    </p>
-                    <button type="button" class ="btn"><b>— Read more</b></button>
-                </div>
-
-                <!-- Article 2 -->
-                <div class="col">
-                    <img src="assets/images/second article.png" alt="Article 2" class="img-fluid">
-                    <h5><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
-                    <p>
-                        This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
-                    </p>
-                    <button type="button" class ="btn"><b>— Read more</b></button>
-                </div>
-
-                <!-- Article 3 -->
-                <div class="col">
-                    <img src="assets/images/third article.png" alt="Article 3" class="img-fluid">
-                    <h5><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
-                    <p>
-                        This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
-                    </p>
-                    <button type="button" class ="btn"><b>— Read more</b></button>
-                </div>
-            </div>
-            
-            <button type="button" class ="btn btn-primary btn-discover">See more of our case studies & insights</button>
-
-            <!-- Partners -->
-            <div class="col shadow-lg p-5 mb-5 bg-white rounded container-fluid">
-                <h2>Proud partners of</h2>
-                <ul>
-                    <li><img src="assets/images/partner 1.png" alt="Partner 1" class="img-fluid"></li>
-                    <li><img src="assets/images/partner 2.png" alt="Partner 1" class="img-fluid"></li>
-                    <li><img src="assets/images/partner 3.png" alt="Partner 1" class="img-fluid"></li>
-                    <li><img src="assets/images/erm.png" alt="Partner 1" class="img-fluid"></li>
-                    <li><img src="assets/images/partner 4.png" alt="Partner 1" class="img-fluid"></li>
-                </ul>
-            </div>
-
-            <!-- Footer -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <img src="assets/images/LOGO_BNFTS.png" alt="Logo" class="img-fluid">
-                        <p>
-                            Unit 305A Bonaventure Plaza, Corner Ortigas-Connecticut Avenues, Greenhills, San Juan, Philippines 1500
-                        </p>
-                        <img src="assets/images/fb.png" alt="Facebook" width="44px" height="44px">
-                        <img src="assets/images/ig.png" alt="Instagram" width="44px" height="44px">
-                    </div>
-                    <div class="col">
-                        <h5><b>Our services</b></h5>
-                        <ul>
-                            <li>Employee Benefits</li>
-                            <li>Risk Management</li>
-                            <li>Insurance</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5><b>Our Partners</b></h5>
-                        <ul>
-                            <li>Gallagher</li>
-                            <li>ERM</li>
-                            <li>Gallagher Communication</li>
-                        </ul>
-
-                        <h5><b>Quick Links</b></h5>
-                        <ul>
-                            <li>About</li>
-                            <li>Contacts</li>
-                            <li>Insights</li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5><b>Sign up to our newsletter!</b></h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="txtFirstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="txtFirstName" placeholder="e.g. Juan">
-
-                                <label for="txtLastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="txtLasttName" placeholder="e.g. dela Cruz">
-
-                                <label for="txtEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="txtEmail" placeholder="e.g. j_delacruz@email.com">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-discover" ><b>Submit</b></button>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Schedule a free consult -->
+        <div class="rounded-4 consult_container overflow-hidden align-content-center">
+            <div class="row container-fluid">
+                <div class="col-md-8 p-5 m-auto">
+                    <div class="text-md-start text-sm-center">
+                        <h2 class="fw-bold text-white">Ready to take advantage of Bnfts?</h2>
+                        <p class="fw-light text-white fs-5">
+                            Schedule a free benefits consultation or risk audit with us and learn how you can improve your benefits strategy to increase employee engagement and benefits satisfaction.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 consult_img_wrapper ">
+                    <div class="text-center consult_btn_wrapper">
+                        <button type="button" class ="btn btn-primary consult_btn">Schedule a Free Audit</button>
+                    </div>
+                    <div class="text-center consult_img">
+                        <img src="assets/images/consult.png" alt="Audit" class="img-fluid">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="container-fluid article_parent_wrapper w-100">
+            <h2 class="fw-bold text-center">Get the latest news & insights</h2>
+
+            <div class="article_child_wrapper w-100">
+                <div class="row container-fluid m-2">
+                    <!-- Article 1 -->
+                    <div class="col-md-4 col-md-4">
+                        <div>
+                            <img src="assets/images/first article.png" alt="Article 1" class="img-fluid w-100">
+                            <h5 class="article_title"><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
+                            <p class="fs-6">
+                                This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
+                            </p>
+                            <button type="button" class ="btn"><b>— Read more</b></button>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="col-md-4 col-md-4">
+                        <img src="assets/images/first article.png" alt="Article 2" class="img-fluid w-100">
+                        <h5 class="article_title"><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
+                        <p class="fs-6">
+                            This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
+                        </p>
+                        <button type="button" class ="btn"><b>— Read more</b></button>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="col-md-4 col-md-4">
+                        <img src="assets/images/first article.png" alt="Article 3" class="img-fluid w-100">
+                        <h5 class="article_title"><b>This is the first paragraph of the article that we will post in our blog roll.</b> </h5>
+                        <p class="fs-6">
+                            This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll. This is the first paragraph of the article that we will post in our blog roll.
+                        </p>
+                        <button type="button" class ="btn"><b>— Read more</b></button>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="text-center m-5">
+                <button type="button" class ="btn btn-primary article_btn">See more of our case studies & insights</button>
+            </div>
+            
+        </div>
+        
+        <!-- Partners -->
+        <div class="col shadow-lg p-5 mb-5 bg-white rounded container-fluid">
+            <h2>Proud partners of</h2>
+            <ul>
+                <li><img src="assets/images/partner 1.png" alt="Partner 1" class="img-fluid"></li>
+                <li><img src="assets/images/partner 2.png" alt="Partner 1" class="img-fluid"></li>
+                <li><img src="assets/images/partner 3.png" alt="Partner 1" class="img-fluid"></li>
+                <li><img src="assets/images/erm.png" alt="Partner 1" class="img-fluid"></li>
+                <li><img src="assets/images/partner 4.png" alt="Partner 1" class="img-fluid"></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/images/LOGO_BNFTS.png" alt="Logo" class="img-fluid">
+                    <p>
+                        Unit 305A Bonaventure Plaza, Corner Ortigas-Connecticut Avenues, Greenhills, San Juan, Philippines 1500
+                    </p>
+                    <img src="assets/images/fb.png" alt="Facebook" width="44px" height="44px">
+                    <img src="assets/images/ig.png" alt="Instagram" width="44px" height="44px">
+                </div>
+                <div class="col">
+                    <h5><b>Our services</b></h5>
+                    <ul>
+                        <li>Employee Benefits</li>
+                        <li>Risk Management</li>
+                        <li>Insurance</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5><b>Our Partners</b></h5>
+                    <ul>
+                        <li>Gallagher</li>
+                        <li>ERM</li>
+                        <li>Gallagher Communication</li>
+                    </ul>
+
+                    <h5><b>Quick Links</b></h5>
+                    <ul>
+                        <li>About</li>
+                        <li>Contacts</li>
+                        <li>Insights</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5><b>Sign up to our newsletter!</b></h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="txtFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="txtFirstName" placeholder="e.g. Juan">
+
+                            <label for="txtLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="txtLasttName" placeholder="e.g. dela Cruz">
+
+                            <label for="txtEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="e.g. j_delacruz@email.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-discover" ><b>Submit</b></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>

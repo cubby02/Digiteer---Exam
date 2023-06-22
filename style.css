@@ -119,15 +119,22 @@ h2 {
 
 .stats_col {
     background: var(--box-container2);
+    height: 290px;
 }
 
 
 .logo_colored {
-    margin-right: -2%;
-    margin-top: -5%;
     width: auto;
     height: 150px;
     z-index: 0;
+    overflow: hidden;
+}
+
+.logo_img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    
 }
 
 .stats_header {
@@ -191,7 +198,7 @@ h2 {
 
     .logo_colored {
         width: auto;
-        height: 300px;
+        height: 250px;
     }
 }
 

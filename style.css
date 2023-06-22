@@ -208,7 +208,6 @@ body {
 
 .article_title {
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 .article_btn {
@@ -216,6 +215,45 @@ body {
     background-color: var(--buttons);
     border: none;
     width: 40%;
+}
+
+/* Partners */
+.partners_wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.footer p {
+    font-weight: 200;
+    color: var(--bg-body);
+}
+
+.footer h5 {
+    color: var(--bg-body);
+}
+
+.footer form {
+    margin-top: 7%;
+}
+
+.footer_form {
+    margin-bottom: 5%;
+}
+
+.footer li {
+    font-weight: 200;
+    color: var(--bg-body);
+}
+
+.footer .form-label::after {
+    content: " *";
+    color: red;
 }
 
 /* Tablet mode */

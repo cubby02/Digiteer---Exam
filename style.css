@@ -21,13 +21,41 @@ body {
 }
 
 /* Navigation Bar */
+nav {
+    background-color: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav.scrolled {
+   background-color: white;
+   opacity: 0.98; 
+}
+
+#items {
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.items_scrolled {
+    color: black;
+}
+
 .navbar-brand {
     padding-left: 5%;
     font-weight: 700;
     z-index: 1;
 }
 
-.btn-contact {
+.navbar_items {
+    margin-right: 5%;
+    transition: color 0.4s ease-in-out;
+}
+
+.navbar_items.scrolled {
+    color: black;
+}
+
+.navbar_btn_contact {
     color: var(--bg-body);
     background-color: var(--buttons);
     font-size: large;
@@ -308,8 +336,10 @@ body {
     .navbar-brand {
         padding-left: 12%;
     }
-    .btn-contact {
-        margin-right: 15%;
+
+
+    .navbar_items {
+        margin-right: 10%;
     }
 
     .welcome-content {

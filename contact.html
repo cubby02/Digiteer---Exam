@@ -66,38 +66,23 @@
                         <form>
                             <div class="footer_form">
                                 <label for="txtFirstName" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="txtFirstName" placeholder="e.g. Juan" required> 
+                                <input type="text" class="form-control" id="txtFirstName" placeholder="e.g. Juan" required>
+                                <p class="error_text fw-light" id="fnError">This is required</p>
                             </div>
 
                             <div class="footer_form">
                                 <label for="txtLastName" class="form-label">Last Name</label>
                                 <input type="text" class="form-control" id="txtLasttName" placeholder="e.g. dela Cruz" required>
+                                <p class="error_text fw-light" id="lnError">This is required</p>
                             </div>
                             <div class="footer_form">
                                 <label for="txtEmail" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="txtEmail" placeholder="e.g. j_delacruz@email.com" required>
-                            </div>
-                            <div class="form-check footer_form">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Employee Benefits
-                                </label>
+                                <p class="error_text fw-light" id="emailError">This is required</p>
+                                <p class="error_text fw-light" id="notEmail">Invalid Email</p>
                             </div>
 
-                            <div class="form-check footer_form">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Risk Analysis & Management
-                                </label>
-                            </div>
-
-                            <div class="form-check footer_form">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  HR Outsourcing & Consultancy
-                                </label>
-                            </div>
-                            <button type="button" class ="btn btn-primary field_btn">Submit</button>
+                            <button type="button" class ="btn btn-primary field_btn" onclick="show_alert();">Submit</button>
                         </form>
                     </div>
                 </div>

@@ -301,6 +301,16 @@ nav.scrolled {
     color: red;
 }
 
+.field_error {
+    border-color: red;
+}
+
+.error_text {
+    margin-top: 2%;
+    color: red;
+    display: none;
+}
+
 
 /* Tablet mode */
 @media (min-width:800px) {

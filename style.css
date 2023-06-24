@@ -26,18 +26,17 @@ nav {
     transition: background-color 0.3s ease-in-out;
 }
 
+.navSmallScreen {
+    background-color: var(--bg-body);
+}
+
 nav.scrolled {
    background-color: white;
    opacity: 0.98; 
 }
 
-#items {
-    color: white;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.items_scrolled {
-    color: black;
+.navBrandColor {
+    color: var(--bg-body);
 }
 
 .navbar-brand {
@@ -252,7 +251,7 @@ nav.scrolled {
 
 /* Footer */
 .footer {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
 
@@ -282,6 +281,26 @@ nav.scrolled {
     content: " *";
     color: red;
 }
+
+
+/* Contact us */
+.contact_container {
+    background: url(assets/images/client\ commitment\ blue.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.contact_message {
+    padding: 10%;
+}
+
+.footer_form .form-label::after {
+    content: " *";
+    color: red;
+}
+
 
 /* Tablet mode */
 @media (min-width:800px) {
@@ -333,10 +352,10 @@ nav.scrolled {
 
 /* desktop mode */
 @media (min-width:1000px) {
+
     .navbar-brand {
         padding-left: 12%;
     }
-
 
     .navbar_items {
         margin-right: 10%;

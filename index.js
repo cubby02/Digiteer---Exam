@@ -119,6 +119,7 @@ function isEmail(email) {
     return regex.test(String(email).toLowerCase());
 }
 
+//page transition
 window.transitionToPage = function(href) {
     document.querySelector('body').style.opacity = 0;
     

@@ -1,3 +1,20 @@
+/* 
+    this code block is for checking if the section is intersecting upon scrolling
+    it adds hide and show animations upon scrolling
+*/
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+//change the background of Nav Bar
 const btnChangeNavBg = document.getElementById('navMenu');
 btnChangeNavBg.addEventListener('click', () => {
     const nav = document.querySelector('nav');
@@ -5,13 +22,23 @@ btnChangeNavBg.addEventListener('click', () => {
 
 });
 
+//scroll events
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     const elements = ['navBrand', 'navHome', 'navAbout', 'navServices', 'navInsights', 'navMenu'];
+    const achievementWrapper = document.getElementsByClassName('achievement_wrapper')[0];
 
-
+    //toggle the scrolled class in navbar (changes the background color)
     nav.classList.toggle('scrolled', window.scrollY > 0);
 
+    //this is to remove the show class when scrolled back to top
+    hiddenElements.forEach((el) => {
+        if(window.scrollY === 0){
+            el.classList.remove('show');
+        }
+    });
+
+    //when scrolled, the font color of nav bar items will change
     elements.forEach((elementId) => {
         const element = document.getElementById(elementId);
         element.classList.toggle('text-white', window.scrollY === 0);
@@ -19,12 +46,23 @@ window.addEventListener('scroll', () => {
     });
 
     if(window.scrollY === 0){
+        //changes the src of navbar logo to white
         document.getElementById('navBrandLogo').src = '/assets/images/logo-only.png';
+
+        //animates the about/achievement div
+        achievementWrapper.classList.add('hide_achievement');
+        achievementWrapper.classList.remove('show_achievement');
     } else {
+        //changes the src of navbar logo to colored
         document.getElementById('navBrandLogo').src = 'assets/images/logo-only-colored.png';
+
+        //animates the about/achievement div
+        achievementWrapper.classList.remove('hide_achievement');
+        achievementWrapper.classList.add('show_achievement');
     }
 });
 
+//shows alert upon succesful validation of the user input
 function show_alert() {
     const txtFirstName = document.getElementById('txtFirstName');
     const txtLasttName = document.getElementById('txtLasttName');
@@ -69,12 +107,26 @@ function show_alert() {
 
 }
 
+//checks if the field is empty
 function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined' ) return false;
     return (value.length > 0);
 }
 
+//check if the the user input is a valid email
 function isEmail(email) {
     let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     return regex.test(String(email).toLowerCase());
 }
+
+window.transitionToPage = function(href) {
+    document.querySelector('body').style.opacity = 0;
+    
+    setTimeout(function() { 
+        window.location.href = href;
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.querySelector('body').style.opacity = 1;
+});

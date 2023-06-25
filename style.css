@@ -16,8 +16,26 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* For animation */
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transition-delay: 200ms;
 }
 
 /* Navigation Bar */
@@ -138,11 +156,25 @@ nav.scrolled {
     margin: -2.5% 2.5% 2.5% 2.5%;
 }
 
+.hide_achievement {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.show_achievement {
+    transition-delay: 200ms;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s;
+}
+
 .stats_col {
     background: var(--box-container2);
     height: 290px;
 }
-
 
 .logo_colored {
     width: auto;
@@ -169,6 +201,8 @@ nav.scrolled {
     clear: both;
     margin-top: 10%;
 }
+
+
 
 .marketing_content {
     margin: 3%;
@@ -311,6 +345,13 @@ nav.scrolled {
     display: none;
 }
 
+#navHome {
+    cursor: pointer;
+}
+
+#navBrand {
+    cursor: pointer;
+}
 
 /* Tablet mode */
 @media (min-width:800px) {
